@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, rgba(53,163,215,1) 0%, rgba(24,82,227,1) 100%) no-repeat;
+    font-family: 'Roboto', sans-serif;
+    height: 115vh;
+    color: white;
+}
+
+::selection {
+    background: white;
+    color: #2c89db;
+}
+
+svg {
+    width: 50px;
+}
+
+.SVGSearch {
+    width: 30px;
+}
+
+.SVGNotFound {
+    width: 30%;
+}
+
+.SVGIconMap {
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.inputSearch {
+    padding: 15px;
+    width: 15%;
+    border-radius: 25px;
+    border: none;
+    background: #ffffff38;
+    margin-right: 12px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.buttonSearch {
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: ease 0.2s;
+    background: #2473de00;
+    color: white;
+}
+
+.buttonSearch:hover {
+    box-shadow: 0 0 50px white;
+    background: white;
+    color: #2473de;
+    transition: ease 0.2s;
+}
+
+.Card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5% auto;
+    width: 40%;
+    background: rgb(68 68 68 / 42%);
+    padding: 15px;
+    border-radius: 50px;
+    transition: ease 0.5s;
+}
+
+.Card:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #0000009c;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 5px;
+}
+
+
+.desc {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.weather-box {
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 4%;
+    width: 55%;
+    border-radius: 50px;
+    padding: 30px 15px;
+}
+
+.temperature {
+    font-size: 4vw;
+}
+
+.Iweathericon {
+    width: 6vw;
+    animation: moveUpDown 5s linear infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.hr2 {
+    width: 46%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.humidity {
+    display: flex;
+    align-items: center;
+}
+
+.wind {
+    display: flex;
+    align-items: center;
+}
+
+.magicdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.h2details {
+    margin-right: 5px;
+}
+
+.magicbutton {
+    cursor: pointer;
+    transition: ease 0.2s;
+    border: 2px solid white;
+    border-radius: 60px;
+}
+
+.magicbutton:hover {
+    box-shadow: 0px 0px 50px white;
+    background: white;
+    color: #339ed7;
+    transition: ease 0.2s;
+}
+
+.SVGmagic {
+    width: 30px;
+    display: block;
+}
+
+.weather-details {
+    margin: 0px auto;
+    padding: 20px 20px;
+    max-width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 15px;
+    justify-content: center;
+    background: rgb(68 68 68 / 42%);
+    border-radius: 50px;
+    margin-bottom: 200px;
+}
+.weather-details:hover {
+    transition: ease 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #0000009c;
+}
+.de {
+    width: 75%;
+    background: #3197d95e;
+    height: 38px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+
+.svgde {
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:700px) {
+
+    .inputSearch {
+        width: 50%;
+    }
+
+    .Card {
+        margin: 15% auto;
+        width: 50%;
+    }
+
+    .city {
+        font-size: 6vw;
+    }
+
+    .weather-box {
+        flex-flow: row-reverse wrap-reverse;
+        margin: 0 auto;
+        padding: 2px 0px 20px 0px;
+    }
+
+    .temperature {
+        font-size: 8vw;
+    }
+
+    .Iweathericon {
+        width: 14vw;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+}

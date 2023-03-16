@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/weatherlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>App Météo</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="search-box">
+            <div class="divIconMap"><svg class="SVGIconMap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M16.39 14.85c3.85-3.86.88-10.61-4.4-10.61s-8.25 6.74-4.4 10.6l4.39 4.39 4.39-4.4Z"></path><circle cx="12" cy="10.25" r="2" fill="none" stroke="currentColor" stroke-width="1.5"></circle></svg></div>
+            <input class="inputSearch" type="text" placeholder="Rechercher une ville">
+            <button class="buttonSearch"><svg class="SVGSearch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M13.7855 13.7855l5.714 5.714m-4.25-9.25c0 2.7614-2.2386 5-5 5 -2.762 0-5-2.2386-5-5 0-2.762 2.238-5 5-5 2.7614 0 5 2.238 5 5Z"></path></svg></button>
+        </form>
+
+    <div class="Card">
+        <h2 class="city"></h2>
+        <p class="desc"></p>
+
+        <div class="weather-box">
+            <div class="weathericon" alt=""></div>
+            <p class="temperature"></p>
+        </div>
+
+    </div>
+        
+        <hr class="hr2">
+        <div class="magicdiv">
+            <h2 class="h2details">Details</h2>
+            <div class="magicbutton"><svg class="SVGmagic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 7.5 15 12l-4.5 4.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        </div>
+            
+        <div class="weather-details">
+                    <p class="de humidityP"></p>  
+                    <p class="de windP"></p>
+                    <p class="de Tmin"></p>
+                    <p class="de Tmax"></p>
+                    <p class="de ress"></p>
+    
+        </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
