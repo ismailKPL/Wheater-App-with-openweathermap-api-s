@@ -2,4 +2,6 @@
 
 `HTML` `CSS` `JavaScript`
 
-![myweatherapp](https://user-images.githubusercontent.com/67828542/225632904-ff993929-d292-4dbf-a040-9a19b032e8a4.png)
+![335shots_so](https://user-images.githubusercontent.com/67828542/225931675-c59a72b9-4620-4641-a0a2-9bdd40d3e37f.png)
+
+![993shots_so](https://user-images.githubusercontent.com/67828542/225931698-a77c3440-8e66-4aaa-a4e6-9157c2465bac.png)
